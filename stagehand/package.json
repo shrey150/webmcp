@@ -11,12 +11,14 @@
   },
   "scripts": {
     "start": "node --env-file-if-exists=.env index.ts",
+    "demo": "node --env-file-if-exists=.env index.ts --preview",
+    "test": "node --test tools.test.ts",
     "lint": "biome check .",
     "format": "biome check --write .",
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@browserbasehq/stagehand": "^4.1.0",
+    "@browserbasehq/stagehand": "4.2.0-alpha-5788121e60c2648654c2b36ec7755030f0015fab",
     "zod": "^4.6.5"
   },
   "devDependencies": {
